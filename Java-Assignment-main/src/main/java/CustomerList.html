@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Customer List</title>
+ <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+ <div class="customer-list-container">
+ <h2>Customer List</h2>
+ <button onclick="syncCustomers()">Sync</button>
+ <label for="searchInput">Search: </label>
+<input type="text" id="searchInput" name="searchInput" placeholder="search-
+-">
+ <table id="customerTable">
+ <!-- Customer table headers and rows will be populated
+dynamically -->
+ </table>
+ <button id="prevPageBtn">Previous</button>
+ <button id="nextPageBtn">Next</button>
+ <div id="paginationInfo"></div>
+ </div>
+ <script src="./script/customer-list.js"></script>
+</body>
+</html>
